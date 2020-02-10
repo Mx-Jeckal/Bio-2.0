@@ -1,116 +1,48 @@
-.myBtn {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background-color: #F45D52;
-    color: #EDD58E;
-    font-family: 'Oswald', sans-serif;
-    margin: 20px;
-}
-
-.holder {
-    display: flex;
-    background-color: #1E2C3D;
-}
-
+body,
 html {
-    background-color: #1E2C3D;
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    background-color: rgb(143, 160, 110);
 }
 
-.displayCockpit {
-    background-color: #1E2C3D;
-    width: 100%;
-    display: inline-grid;
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/theKeystoZion.png");
+    min-height: 75%;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.nav-top {
-    height: 60px;
-    background-color: #1E2C3D;
+.liteRedColor {
+    background-color: #804343;
 }
 
-.viewImg {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 4px solid #1E2C3D;
-}
-
-
-/* The switch - the box around the slider */
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-#slider1 {
-    margin-top: 80px;
+.headerMargin {
+    margin: 3px;
 }
 
 
-/* Hide default HTML checkbox */
+/* pic of Hazel */
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.displayPic {
+    width: initial;
+    height: 250px;
+    border-radius: 45px;
+    border: 4px solid #356735;
+    border-bottom: 10px solid #356735;
+    border-right: 10px solid #356735;
 }
 
-.switch {
-    margin-left: 20px;
+.bgColor {
+    background-color: #356735;
+    color: white;
 }
 
-
-/* The slider */
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #EDD58E;
-    -webkit-transition: .4s;
-    transition: .4s;
-    display: grid;
+.boxShadow {
+    box-shadow: 3px 4px #4B263B;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #8AD39B;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border: 1px solid #1E2C3D;
-}
-
-input:checked+.slider {
-    background-color: #23BDA8;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #23BDA8;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-
-/* Rounded sliders */
-
-.slider.round {
-    border-radius: 12px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+.menu {
+    display: none;
 }
