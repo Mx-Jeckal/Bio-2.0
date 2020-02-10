@@ -57,9 +57,15 @@ html {
 }
 
 .icon {
-    max-width: 250px
+    max-width: 250px;
+    opacity: .5;
+    margin: 20px;
 }
 
 .wrapBot {
     display: grid;
+}
+
+.footy {
+    border-top: 5px solid #4B263B;
 }
