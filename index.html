@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Hazey Things</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,13 +16,13 @@
                 <a href="#" class="w3-button w3-block bgColor">HOME</a>
             </div>
             <div class="w3-col s3">
+                <a href="#portfolio" class="w3-button w3-block bgColor">PORTFOLIO</a>
+            </div>
+            <div class="w3-col s3">
                 <a href="#about" class="w3-button w3-block bgColor">ABOUT</a>
             </div>
             <div class="w3-col s3">
-                <a href="#menu" class="w3-button w3-block bgColor">MENU</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="#where" class="w3-button w3-block bgColor">WHERE</a>
+                <a href="#contact" class="w3-button w3-block bgColor">CONTACT</a>
             </div>
         </div>
     </div>
@@ -47,77 +47,92 @@
     <!-- Add a background color and large text to the whole page -->
     <div class="liteRedColor w3-grayscale w3-large">
 
+        <!-- Portfolio Container -->
+        <div class="w3-container" id="portfolio">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide boxShadow bgColor">MY PORTFOLIO</span></h5>
+                <!-- Project 1: Drinky Links -->
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <h5 class="bgColor boxShadow">#1 Drinky Links</h5>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'deployed_DL');" id="myLink">
+                        <div class="w3-col s6 tablink">LIVE APP</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'github_DL');">
+                        <div class="w3-col s6 tablink">REPO ON GITHUB</div>
+                    </a>
+                </div>
+
+                <div id="deployed_DL" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Drinky Links</h5>
+                    <label>
+                    
+                        <a href="https://mx-jeckal.github.io/Drinky-Links/" class="wrapBot"><img src="./assets/images/DL_pic.png" alt="Class project: Drinky Links" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
+                    </label>
+                    <p class="w3-text-grey">First group project Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam excepturi inventore tenetur autem ex sit eveniet quasi praesentium neque magnam? Repellat sint nulla officiis libero, maiores tenetur quaerat officia
+                        dignissimos?
+                    </p>
+                </div>
+                <div id="github_DL" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Github Repo</h5>
+                    <a href="https://github.com/Mx-Jeckal/Drinky-Links" class="wrapBot">
+                        <img src="./assets/images/DL_code_pic.png" class="portPic boxShadow w3-hover-opacity"> VIEW THE CODE
+                    </a>
+                </div>
+
+
+                <!-- JS quiz  -->
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <h5 class="bgColor boxShadow">#2 JavaScript quiz game</h5>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'deployed_JSQ');" id="JS_quiz">
+                        <div class="w3-col s6 tablink">LIVE APP</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'github_JSQ');">
+                        <div class="w3-col s6 tablink">REPO ON GITHUB</div>
+                    </a>
+                </div>
+
+                <div id="deployed_JSQ" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Code quiz, JavaScript style</h5>
+                    <label>
+                    
+                    <a href="https://mx-jeckal.github.io/JS_code_quiz/" class="wrapBot"><img src="./assets/images/JS_quiz_pic.png" alt="Class project: Drinky Links" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
+                </label>
+                    <p class="w3-text-grey">A short and fun quiz over Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aperiam soluta iusto dolores aliquam aut voluptatibus quibusdam ex, fugit laboriosam alias repellendus recusandae modi ullam fuga. Unde maxime
+                        fuga nam.
+                    </p>
+
+                </div>
+
+                <div id="github_JSQ" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Github Repo</h5>
+                    <a href="https://github.com/Mx-Jeckal/Drinky-Links" class="wrapBot">
+                        <img src="./assets/images/DL_code_pic.png" class="portPic boxShadow w3-hover-opacity"> VIEW THE CODE
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
         <!-- About Container -->
         <div class="w3-container" id="about">
             <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide bgColor boxShadow">ABOUT THE CAFE</span></h5>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide bgColor boxShadow">LIL ABOUT ME</span></h5>
+                <p>Graduate of KU full-stack web development certificate bootcamp with hands-on experience building full-stack applications.</p>
+                <a href="https://docs.google.com/document/d/11NJirGAoLbZUzGD9-9yKHoriQ3MC7JiL_bKPFKcfv9o/edit?usp=sharing">
+                    <img src="./assets/images/curriculum.png" style="float: left;" class="icon">VIEW MY RESUME</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quis nisi culpa inventore harum iste nihil et asperiores quas? Quam magnam saepe ad obcaecati, est nostrum voluptas officiis fugit dolorum!</p>
+                <!-- <div class="w3-panel w3-leftbar w3-light-grey">
                     <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
                     <p>Chef, Coffeeist and Owner: Liam Brown</p>
-                </div>
-                <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                </div> -->
                 <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
                 <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
             </div>
         </div>
 
-        <!-- Menu Container -->
-        <div class="w3-container" id="menu">
-            <div class="w3-content" style="max-width:700px">
-
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
-
-                <div class="w3-row w3-center w3-card w3-padding">
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-                        <div class="w3-col s6 tablink">Eat</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-                        <div class="w3-col s6 tablink">Drink</div>
-                    </a>
-                </div>
-
-                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Bread Basket</h5>
-                    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-
-                    <h5>Honey Almond Granola with Fruits</h5>
-                    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-
-                    <h5>Belgian Waffle</h5>
-                    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-                    <h5>Scrambled eggs</h5>
-                    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-
-                    <h5>Blueberry Pancakes</h5>
-                    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
-                </div>
-
-                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Coffee</h5>
-                    <p class="w3-text-grey">Regular coffee 2.50</p><br>
-
-                    <h5>Chocolato</h5>
-                    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-                    <h5>Corretto</h5>
-                    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-                    <h5>Iced tea</h5>
-                    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-                    <h5>Soda</h5>
-                    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
-                </div>
-                <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-            </div>
-        </div>
-
         <!-- Contact/Area Container -->
-        <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-container" id="contact" style="padding-bottom:32px;">
             <div class="w3-content" style="max-width:700px">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
                 <p>Find us at some address at some place.</p>
@@ -139,6 +154,7 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
     </footer>
 

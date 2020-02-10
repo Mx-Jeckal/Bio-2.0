@@ -46,3 +46,20 @@ html {
 .menu {
     display: none;
 }
+
+
+/* portfolio images styling */
+
+.portPic {
+    background-position: left center;
+    width: 75%;
+    height: auto;
+}
+
+.icon {
+    max-width: 250px
+}
+
+.wrapBot {
+    display: grid;
+}

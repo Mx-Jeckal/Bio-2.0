@@ -7,9 +7,10 @@
       }
       tablinks = document.getElementsByClassName("tablink");
       for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          tablinks[i].className = tablinks[i].className.replace(" bgColor boxShadow", "");
       }
       document.getElementById(menuName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      evt.currentTarget.firstElementChild.className += " bgColor boxShadow";
   }
   document.getElementById("myLink").click();
+  document.getElementById("JS_quiz").click();
