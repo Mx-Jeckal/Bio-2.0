@@ -14,3 +14,4 @@
   }
   document.getElementById("myLink").click();
   document.getElementById("JS_quiz").click();
+  document.getElementById("fastDash").click();

@@ -4,14 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/style.css">
 
 <body>
 
     <!-- Links (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-row w3-padding bgColor w3-grayscale-min">
+    <div class="w3-top navBorder">
+        <div class="w3-row w3-padding bgColor  ">
             <div class="w3-col s3">
                 <a href="#" class="w3-button w3-block bgColor">HOME</a>
             </div>
@@ -28,14 +30,14 @@
     </div>
 
     <!-- Header with image -->
-    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <header class="bgimg w3-display-container  " id="home">
         <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
             <span class="w3-tag">Open from 6am to 5pm</span>
         </div> -->
         <div class="w3-display-middle w3-center">
             <img src="./assets/images/for_aiur.jpg" class="boxShadow displayPic w3-round" alt="The quirky Coder">
             <p class="boxShadow bgColor">Front-end dev<br>
-                <h4 class="boxShadow bgColor">Hazel Tuxhorn</h4>
+                <h1 class="boxShadow bgColor">Hazel Tuxhorn</h1>
             </p>
 
         </div>
@@ -45,7 +47,7 @@
     </header>
 
     <!-- Add a background color and large text to the whole page -->
-    <div class="liteRedColor w3-grayscale w3-large">
+    <div class="liteRedColor w3-large">
 
         <!-- Portfolio Container -->
         <div class="w3-container" id="portfolio">
@@ -69,8 +71,7 @@
                     
                         <a href="https://mx-jeckal.github.io/Drinky-Links/" class="wrapBot"><img src="./assets/images/DL_pic.png" alt="Class project: Drinky Links" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
                     </label>
-                    <p class="w3-text-grey">First group project Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam excepturi inventore tenetur autem ex sit eveniet quasi praesentium neque magnam? Repellat sint nulla officiis libero, maiores tenetur quaerat officia
-                        dignissimos?
+                    <p class=" ">The first group project during bootcamp, team of 4. Featuring dynamically generated elements and makes API calls to 2 different APIs.
                     </p>
                 </div>
                 <div id="github_DL" class="w3-container menu w3-padding-48 w3-card">
@@ -79,11 +80,36 @@
                         <img src="./assets/images/DL_code_pic.png" class="portPic boxShadow w3-hover-opacity"> VIEW THE CODE
                     </a>
                 </div>
+                <!-- fashDash weather display project  -->
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <h5 class="bgColor boxShadow">#2 fastDash weather forecast</h5>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'deployed_FD');" id="fashDash">
+                        <div class="w3-col s6 tablink">LIVE APP</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'github_FD');">
+                        <div class="w3-col s6 tablink">REPO ON GITHUB</div>
+                    </a>
+                </div>
 
+                <div id="deployed_FD" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>5-day forecast app</h5>
+                    <label>
+                    
+                    <a href="https://mx-jeckal.github.io/fastDash/" class="wrapBot"><img src="./assets/images/fastDash.png" alt="A JavaScript based weather forecast" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
+                </label>
+                    <p class=" ">A weather forecast app that queries an API and saves previous searches for later.</p>
 
+                </div>
+
+                <div id="github_FD" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Github Repo</h5>
+                    <a href="https://github.com/Mx-Jeckal/fastDash" class="wrapBot">
+                        <img src="./assets/images/fastDash_code.png" class="portPic boxShadow w3-hover-opacity"> VIEW THE CODE
+                    </a>
+                </div>
                 <!-- JS quiz  -->
                 <div class="w3-row w3-center w3-card w3-padding">
-                    <h5 class="bgColor boxShadow">#2 JavaScript quiz game</h5>
+                    <h5 class="bgColor boxShadow">#3 JavaScript quiz game</h5>
                     <a href="javascript:void(0)" onclick="openMenu(event, 'deployed_JSQ');" id="JS_quiz">
                         <div class="w3-col s6 tablink">LIVE APP</div>
                     </a>
@@ -95,11 +121,10 @@
                 <div id="deployed_JSQ" class="w3-container menu w3-padding-48 w3-card">
                     <h5>Code quiz, JavaScript style</h5>
                     <label>
-                    
-                    <a href="https://mx-jeckal.github.io/JS_code_quiz/" class="wrapBot"><img src="./assets/images/JS_quiz_pic.png" alt="Class project: Drinky Links" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
-                </label>
-                    <p class="w3-text-grey">A short and fun quiz over Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aperiam soluta iusto dolores aliquam aut voluptatibus quibusdam ex, fugit laboriosam alias repellendus recusandae modi ullam fuga. Unde maxime
-                        fuga nam.
+            
+            <a href="https://mx-jeckal.github.io/JS_code_quiz/" class="wrapBot"><img src="./assets/images/JS_quiz_pic.png" alt="Class project: Drinky Links" class="portPic boxShadow w3-hover-opacity">VIEW&nbsp;NOW</a>
+        </label>
+                    <p class=" ">A short and fun quiz over some of the fundementals of JavaScript.
                     </p>
 
                 </div>
@@ -110,41 +135,45 @@
                         <img src="./assets/images/DL_code_pic.png" class="portPic boxShadow w3-hover-opacity"> VIEW THE CODE
                     </a>
                 </div>
-
             </div>
         </div>
 
-        <!-- About Container -->
-        <div class="w3-container" id="about">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide bgColor boxShadow">LIL ABOUT ME</span></h5>
-                <p>Graduate of KU full-stack web development certificate bootcamp with hands-on experience building full-stack applications.</p>
-                <a href="https://docs.google.com/document/d/11NJirGAoLbZUzGD9-9yKHoriQ3MC7JiL_bKPFKcfv9o/edit?usp=sharing">
-                    <img src="./assets/images/curriculum.png" style="float: left;" class="icon">VIEW MY RESUME</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quis nisi culpa inventore harum iste nihil et asperiores quas? Quam magnam saepe ad obcaecati, est nostrum voluptas officiis fugit dolorum!</p>
 
-            </div>
+
+
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide bgColor boxShadow">LIL ABOUT ME</span></h5>
+            <p>Graduate of KU full-stack web development certificate bootcamp with hands-on experience building full-stack applications.</p>
+            <a href="https://docs.google.com/document/d/11NJirGAoLbZUzGD9-9yKHoriQ3MC7JiL_bKPFKcfv9o/edit?usp=sharing">
+                <img src="./assets/images/curriculum.png" style="float: left;" class="icon">VIEW MY RESUME</a>
+            <p>Independent thinker budding into the realms of software development.</p>
+
         </div>
+    </div>
 
-        <!-- Contact Container -->
-        <div class="w3-container" id="contact" style="padding-bottom:32px;">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide bgColor boxShadow">HOW TO CONTACT ME</span></h5>
-                <img src="./assets/images/linkedin.png" alt="Link to LinkedIn" class="icon w3-hover-opacity">
-                <img src="./assets/images/github-logo.png" class="icon w3-hover-opacity">
-            </div>
-        </div>
+    <!-- Contact Container -->
 
-        <!-- End page content -->
+
+    <!-- End page content -->
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center bgColor w3-grayscale w3-padding-48 w3-large footy">
-        Icons made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <footer class="w3-center bgColor  w3-padding-48 w3-large footy">
+        <div class="w3-container" id="contact" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide contactFooty boxShadow">HOW TO CONTACT ME</span></h5>
+                <a href="https://www.linkedin.com/in/hazel-tuxhorn/"><img src="./assets/images/linkedin.png" alt="Link to LinkedIn" class="icon w3-hover-opacity"></a>
+                <a href="mailto:mx.jeckal@gmail.com?Subject=First%20Contact" target="_top "><img src="./assets/images/mail.png " alt="Link to Github " class="icon w3-hover-opacity "></a>
+                <a href="https://www.github.com/Mx-Jeckal "><img src="./assets/images/github-logo.png " alt="Link to Github " class="icon w3-hover-opacity "></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js "></script>
 
 </body>
 
